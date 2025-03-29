@@ -1,4 +1,4 @@
-package com.tuvarna.mobilezone.persistence.entity;
+package com.tuvarna.mobilezonebackend.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

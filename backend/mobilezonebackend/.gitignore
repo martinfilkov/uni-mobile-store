@@ -31,10 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### Flatten Pom ###
-**/*.flattened-pom.xml
-
-### Application Properties ###
-application.properties
-database.properties

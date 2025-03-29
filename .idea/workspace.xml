@@ -4,21 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c72e05-84b6-4c27-ba86-3139168706f5" name="Changes" comment="remove .idea folder">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/entity/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/entity/Mobile.java" afterDir="false" />
+    <list default="true" id="f694c83f-22df-498c-a0b3-06dd676794d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/MobilezoneApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/base/OperationInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/base/OperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/base/OperationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/base/RestApiRoutes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/brand/CreateBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/brand/CreateBrandInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/api/brand/CreateBrandResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/core/operations/brand/CreateBrandOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/persistence/entity/Brand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/persistence/entity/Mobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/persistence/repository/BrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/persistence/repository/MobileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/main/java/com/tuvarna/mobilezone/rest/controller/BrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mobilezone/src/test/java/com/tuvarna/mobilezone/MobilezoneApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/MobilezoneApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/base/OperationInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/base/OperationProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/base/OperationResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/base/RestApiRoutes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/mobile/CreateBrand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/mobile/CreateBrandInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/api/mobile/CreateBrandResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/core/operations/brand/CreateBrandOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/entity/Brand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/entity/Mobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/repository/BrandRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/persistence/repository/MobileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/tuvarna/mobilezone/rest/controller/BrandController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/tuvarna/mobilezone/MobilezoneApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,17 +65,10 @@
     &quot;accountId&quot;: &quot;707a2a23-be27-45c0-ac5d-5d1401cadc59&quot;
   }
 }</component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="false" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2uzlY8lQ7EGEridmY1eMw1iltlR" />
+  <component name="ProjectId" id="2v04sz6skHE02inOGp7hAu2hG28" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -56,17 +79,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.MobilezoneApplication.executor": "Run",
+    "Maven.mobilezone [clean,install,-DskipTests].executor": "Run",
+    "Maven.mobilezone [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "mz-8",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean install -DskipTests" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="MobilezoneApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tuvarna.mobilezone.MobilezoneApplication" />
       <module name="mobilezone" />
       <extension name="coverage">
@@ -88,25 +123,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d6c72e05-84b6-4c27-ba86-3139168706f5" name="Changes" comment="" />
-      <created>1743259329509</created>
+      <changelist id="f694c83f-22df-498c-a0b3-06dd676794d2" name="Changes" comment="" />
+      <created>1743268868774</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1743259329509</updated>
+      <updated>1743268868774</updated>
     </task>
-    <task id="LOCAL-00001" summary="remove .idea folder">
-      <option name="closed" value="true" />
-      <created>1743263107940</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1743263107940</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove .idea folder" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
