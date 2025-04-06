@@ -85,7 +85,10 @@ public class BrandController {
             @ApiResponse(responseCode = "401", description = "User not authorized")
     })
     @PutMapping(RestApiRoutes.BRAND_ID)
-    public ResponseEntity<EditBrandResult> editBrand(@PathVariable(name = "id") String id, @RequestBody EditBrandInput input) {
+    public ResponseEntity<EditBrandResult> editBrand(@PathVariable(name = "id") String id, @RequestBody EditBrandInput request) {
+        EditBrandInput input = request.toBuilder()
+                .id(id)
+                .build();
         EditBrandResult output = editBrand.process(input);
         return ResponseEntity.ok(output);
     }
