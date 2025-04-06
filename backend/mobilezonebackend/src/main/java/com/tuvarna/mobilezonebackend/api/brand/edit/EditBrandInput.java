@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
+@Builder(toBuilder = true)
 @ToString
 public class EditBrandInput implements OperationInput {
     @UUID(message = "Invalid UUID format")
