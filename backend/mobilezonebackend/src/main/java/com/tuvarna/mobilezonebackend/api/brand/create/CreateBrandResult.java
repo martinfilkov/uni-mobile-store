@@ -1,10 +1,7 @@
-package com.tuvarna.mobilezonebackend.api.mobile;
+package com.tuvarna.mobilezonebackend.api.brand.create;
 
 import com.tuvarna.mobilezonebackend.api.base.OperationResult;
-import com.tuvarna.mobilezonebackend.persistence.entity.Brand;
 import lombok.*;
-
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package com.tuvarna.mobilezonebackend.api.mobile;
+package com.tuvarna.mobilezonebackend.api.brand.create;
 
 import com.tuvarna.mobilezonebackend.api.base.OperationProcessor;
 

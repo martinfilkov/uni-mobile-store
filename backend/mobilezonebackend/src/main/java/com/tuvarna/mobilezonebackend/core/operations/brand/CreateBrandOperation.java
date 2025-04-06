@@ -1,8 +1,8 @@
 package com.tuvarna.mobilezonebackend.core.operations.brand;
 
-import com.tuvarna.mobilezonebackend.api.mobile.CreateBrand;
-import com.tuvarna.mobilezonebackend.api.mobile.CreateBrandInput;
-import com.tuvarna.mobilezonebackend.api.mobile.CreateBrandResult;
+import com.tuvarna.mobilezonebackend.api.brand.create.CreateBrand;
+import com.tuvarna.mobilezonebackend.api.brand.create.CreateBrandInput;
+import com.tuvarna.mobilezonebackend.api.brand.create.CreateBrandResult;
 import com.tuvarna.mobilezonebackend.persistence.entity.Brand;
 import com.tuvarna.mobilezonebackend.persistence.repository.BrandRepository;
 import lombok.RequiredArgsConstructor;

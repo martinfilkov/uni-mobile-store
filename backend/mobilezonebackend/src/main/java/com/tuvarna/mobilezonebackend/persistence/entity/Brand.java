@@ -3,14 +3,14 @@ package com.tuvarna.mobilezonebackend.persistence.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
+@Builder(toBuilder = true)
 @ToString
 @Entity
 @Table(name = "brands")
@@ -26,5 +26,5 @@ public class Brand {
     private String country;
 
     @Column(name = "established_date", nullable = false)
-    private LocalDateTime establishedDate;
+    private LocalDate establishedDate;
 }
