@@ -7,6 +7,8 @@ import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.validator.constraints.UUID;
 
+import java.time.LocalDate;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -49,4 +51,49 @@ public class EditMobileInput implements OperationInput {
     @NotBlank(message = "Resolution cannot be null")
     @Size(min = 2, max = 50)
     private String resolution;
+
+
+    @NotBlank(message = "Dimensions cannot be null")
+    private String dimensions;
+
+    @Positive(message = "Weight must be positive")
+    private Double weight;
+
+    @NotBlank(message = "Build cannot be null")
+    private String build;
+
+    @NotBlank(message = "SIM cannot be null")
+    private String sim;
+
+    @NotBlank(message = "Display type cannot be null")
+    private String displayType;
+
+    @NotBlank(message = "GPU cannot be null")
+    private String gpu;
+
+    @NotBlank(message = "Main camera cannot be null")
+    private String mainCamera;
+
+    @NotBlank(message = "Main camera feature cannot be null")
+    private String mainCameraFeature;
+
+    @NotBlank(message = "Selfie camera cannot be null")
+    private String selfieCamera;
+
+    @NotBlank(message = "Battery type cannot be null")
+    private String batteryType;
+
+    @NotBlank(message = "Charging cannot be null")
+    private String charging;
+
+    @NotBlank(message = "Image cannot be null")
+    private String image;
+
+    @NotBlank(message = "Sensors cannot be null")
+    private String sensors;
+
+    @NotBlank(message = "Color cannot be null")
+    private String color;
+
+    private LocalDate releaseDate;
 }
