@@ -3,9 +3,16 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar">
       <div className="container">
-        <Link className="navbar-brand" to="/">PhoneSpec</Link>
+        <Link className="navbar-brand d-flex align-items-center" to="/">
+          <img 
+            src="/image/logo.png" 
+            alt="Mobile Zone Logo" 
+            style={{ height: '30px', marginRight: '10px' }} 
+          />
+          Mobile Zone
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,12 +27,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink to="/" className="nav-link" end>Home</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/compare" className="nav-link">Compare</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/about" className="nav-link">About</NavLink>
-            </li>
+          
           </ul>
         </div>
       </div>

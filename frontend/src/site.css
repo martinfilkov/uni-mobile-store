@@ -1,0 +1,219 @@
+/* === modern.css === */
+
+/* Font and base setup */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #0a2540;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a2540;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00cfff);
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+  }
+  
+  /* Filters Grid */
+  .filters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "search search"
+      "filters filters"
+      "clear sort";
+    gap: 20px;
+  }
+  
+  .filters-top {
+    grid-area: search;
+  }
+  
+  .filters-options {
+    grid-area: filters;
+  }
+  
+  .filters-actions {
+    grid-area: clear;
+  }
+  
+  .filters-sort {
+    grid-area: sort;
+  }
+  
+  @media (min-width: 992px) {
+    .filters-grid {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-areas:
+        "search search search"
+        "filters filters filters"
+        "clear . sort";
+    }
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: 64px;
+  }
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #007bff !important;
+  }
+  
+  .navbar-brand img {
+    height: 28px;
+    margin-right: 8px;
+  }
+  
+  .nav-link {
+    color: #1e40af;
+    margin-left: 12px;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00cfff;
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #007bff, #00cfff);
+    color: white;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+  
+  .hero .btn {
+    background-color: white;
+    color: #007bff;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #e0f2ff;
+  }
+  
+  /* Modern Card */
+  .card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 12px;
+  }
+  
+  .row > .col,
+  .row > [class^="col-"] {
+    margin-bottom: 12px;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card-img-top {
+    object-fit: contain;
+    height: 220px;
+    background: linear-gradient(to top, #f1f5f9, #ffffff);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #007bff, #00cfff);
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #005fcc, #00aaff);
+  }
+  
+  /* Compare Tray */
+  .compare-tray {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .card-img-top {
+      height: 180px;
+    }
+    .card {
+      margin: 12px 0;
+    }
+  }
+  

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import PhoneDetails from './pages/PhoneDetails';
 import Comparison from './pages/Comparison';
+import CompareTray from './components/CompareTray';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/phone/:id" element={<PhoneDetails />} />
         <Route path="/compare" element={<Comparison />} />
       </Routes>
+      <CompareTray />
     </>
   );
 }

@@ -11,7 +11,8 @@ const FilterPanel = ({ filters, onChange, brands = [], osOptions = [] }) => {
     };
 
   return (
-    <div className="mb-4 row g-3">
+    <div >
+      <div className="mb-4 row g-3">
       <div className="col-md-3">
         <label className="form-label">Brand</label>
         <select
@@ -39,8 +40,9 @@ const FilterPanel = ({ filters, onChange, brands = [], osOptions = [] }) => {
           ))}
         </select>
       </div>
-
-      <div className="col-md-3">
+      </div>
+      <div className="mb-4 row g-3">
+      <div className="col-md-6">
         <label className="form-label">Price Range: ${filters.minPrice} – ${filters.maxPrice}</label>
   <Slider
   range
@@ -54,6 +56,7 @@ const FilterPanel = ({ filters, onChange, brands = [], osOptions = [] }) => {
     onChange('maxPrice', max);
   }}
 />
+</div>
 </div>
       </div>
   );

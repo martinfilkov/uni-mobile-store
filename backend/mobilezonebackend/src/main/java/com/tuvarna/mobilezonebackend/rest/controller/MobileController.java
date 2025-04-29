@@ -46,6 +46,7 @@ public class MobileController {
             @ApiResponse(responseCode = "200", description = "Successfully extracted all mobiles"),
             @ApiResponse(responseCode = "401", description = "User not authorized")
     })
+    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping(RestApiRoutes.MOBILE)
     private ResponseEntity<List<Mobile>> getAllMobiles() {
         List<Mobile> output = getAllMobiles.process();
@@ -56,6 +57,7 @@ public class MobileController {
             @ApiResponse(responseCode = "200", description = "Successfully extract mobile by id"),
             @ApiResponse(responseCode = "401", description = "User not authorized")
     })
+    @CrossOrigin(origins = "http://localhost:5173")
     @GetMapping(RestApiRoutes.MOBILE_ID)
     private ResponseEntity<GetMobileByIdResult> getMobileById(@PathVariable(name = "id") String id) {
         GetMobileByIdInput input = GetMobileByIdInput.builder()
