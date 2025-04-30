@@ -1,12 +1,13 @@
 import React from 'react';
 import { useCompare } from '../context/CompareContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const CompareTray = () => {
   const { phonesToCompare } = useCompare();
   const navigate = useNavigate();
+  const location = useLocation();
 
-  if (phonesToCompare.length === 0) return null;
+  if (phonesToCompare.length === 0 || location.pathname === '/about') return null;
 
   return (
     <div
@@ -25,7 +26,7 @@ const CompareTray = () => {
     >
       <div style={{ fontSize: '14px', marginBottom: '8px' }}>
         {phonesToCompare.map((phone) => (
-          <div key={phone.id}> {phone.brand.name} {phone.model}</div>
+          <div key={phone.id}>{phone.brand.name} {phone.model}</div>
         ))}
       </div>
       <div
